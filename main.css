@@ -37,6 +37,26 @@ div#face, div#face * {
 	left: 25%;
 	transform-origin: bottom;
 }
+#cheek_left{
+  background: pink;
+  position: relative;
+  width: 20%;
+  left: 10%;
+  height: 20%;
+  border-radius: 100%;
+  top: 50%;
+
+}
+#cheek_right{
+  background: pink;
+  position: absolute;
+  width: 20%;
+  left: 70%;
+  height: 20%;
+  border-radius: 100%;
+  top: 50%;
+
+}
 
 #mouth {
 	position: relative;
@@ -60,12 +80,40 @@ div#face, div#face * {
 }
 .left.ear { left: 25%; }
 .right.ear { right: 25%; }
-.neck{  position: absolute;
+.neck {
+  position: absolute;
   width: 20%;
-	height: 30%;
+	height: 90%;
   background: #e8cda8;
   left: 40%;
   bottom: 0%;
+}
+#bubble {
+	position: absolute;
+	width: 325px;
+	height: 150px;
+	padding: 18px;
+  margin-top: 5%;
+	background: #C0E4FB;
+	-webkit-border-radius: 47px;
+	-moz-border-radius: 47px;
+	border-radius: 47px;
+	right: 0px;
+	top:0px;
+}
+
+#bubble:after
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 15px 30px 15px 0;
+border-color: transparent #C0E4FB;
+display: block;
+width: 0;
+z-index:  6;
+left: -30px;
+top: 100px;
 }
 
 body{
